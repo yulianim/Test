@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Bart
+Build-Jdk: 15.0.1
+Implementation-Title: requirement
+Implementation-Version: 1.0.0.BUILD-SNAPSHOT
+Implementation-Vendor-Id: com.requirement
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://platform.spring.io/platform/requirement/
+Created-By: Maven Integration for Eclipse
+

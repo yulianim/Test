@@ -1,0 +1,13 @@
+// Spring Roo 2.0.0.RELEASE [rev 4a2e9f1] log opened at 2021-03-02 23:28:38
+project setup --topLevelPackage com.requirement
+jpa setup --provider HIBERNATE --database POSTGRES --databaseName RequirementDB
+entity jpa --class ~.domain.Requirement
+field string  --fieldName title --notNull
+field string  --fieldName description --notNull
+field date --fieldName creation_date --type java.util.Date --persistenceType JPA_TIMESTAMP
+repository jpa --all
+service --all
+web mvc setup
+web mvc view setup --type THYMELEAF
+web mvc controller --all --responseType THYMELEAF
+web mvc controller --all --pathPrefix /

@@ -1,0 +1,20 @@
+<!--TABLE-->
+<div class="table-responsive" id="containerFields" data-th-fragment="requirement-entityModalConfirmBody" data-th-with="collectionLink=${@linkBuilder.of('RequirementsCollectionThymeleafController')},itemLink=${@linkBuilder.of('RequirementsItemThymeleafController')}">
+    <table id="requirement-entity-table-item-to-remove" data-data-load-url="${collectionLink.to('datatablesByIdsIn')}">
+      <thead>
+        <tr>
+          <th data-data="title" data-th-text="#{label_requirement_title}">title</th>
+          <th data-data="description" data-th-text="#{label_requirement_description}">description</th>
+          <th data-data="creation_date" data-th-text="#{label_requirement_creation_date}">creation_date</th>
+        </tr>
+      </thead>
+      <tbody data-th-remove="all">
+        <tr>
+          <td>title</td>
+          <td>description</td>
+          <td>creation_date</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<!-- /TABLE -->
